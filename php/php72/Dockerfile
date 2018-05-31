@@ -23,6 +23,7 @@ RUN apt-get update \
     && apt-get install -y libxml2-dev \
     && apt-get install -y libxslt-dev \
     && docker-php-ext-install soap \
+    && docker-php-ext-install amqp \
     && docker-php-ext-install xsl \
     && docker-php-ext-install xmlrpc \
     && docker-php-ext-install wddx \
@@ -41,11 +42,11 @@ RUN apt-get update \
     && docker-php-ext-install sockets \
     && docker-php-ext-install gettext \
     && docker-php-ext-install shmop \
-    && docker-php-ext-install sysvmsg \
-    && docker-php-ext-install sysvsem \
-    && docker-php-ext-install sysvshm \
+#    && docker-php-ext-install sysvmsg \
+#    && docker-php-ext-install sysvsem \
+#    && docker-php-ext-install sysvshm \
     && docker-php-ext-install opcache
-    #&& docker-php-ext-install pdo_firebird \
+#    && docker-php-ext-install pdo_firebird \
     #&& docker-php-ext-install pdo_dblib \
     #&& docker-php-ext-install pdo_oci \
     #&& docker-php-ext-install pdo_odbc \
@@ -58,12 +59,12 @@ RUN apt-get update \
     #&& :\
     #&& apt-get install -y libmcrypt-dev \
     #&& docker-php-ext-install mcrypt \
-    #&& :\
-    #&& apt-get install -y curl \
-    #&& apt-get install -y libcurl3 \
-    #&& apt-get install -y libcurl4-openssl-dev \
-    #&& docker-php-ext-install curl \
-    #&& :\
+    && :\
+    && apt-get install -y curl \
+    && apt-get install -y libcurl3 \
+    && apt-get install -y libcurl4-openssl-dev \
+    && docker-php-ext-install curl \
+    && :\
     #&& apt-get install -y libreadline-dev \
     #&& docker-php-ext-install readline \
     #&& :\
