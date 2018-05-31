@@ -12,23 +12,22 @@ COPY ./sources.list.stretch /etc/apt/sources.list
 # 3. soap requires libxml2-dev.
 # 4. xml, xmlrpc, wddx require libxml2-dev and libxslt-dev.
 # 5. Line `&& :\` is just for better reading and do nothing.
-RUN apt-get update \
-    && apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev \
+RUN yum update \
+    && yum install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd \
     && :\
-    && apt-get install -y libicu-dev \
+    && yum install -y libicu-dev \
     && docker-php-ext-install intl \
     && :\
-    && apt-get install -y libxml2-dev \
-    && apt-get install -y libxslt-dev \
+    && yum install -y libxml2-dev \
+    && yum install -y libxslt-dev \
     && docker-php-ext-install soap \
-    && docker-php-ext-install amqp \
     && docker-php-ext-install xsl \
     && docker-php-ext-install xmlrpc \
     && docker-php-ext-install wddx \
     && :\
-    && apt-get install -y libbz2-dev \
+    && yum install -y libbz2-dev \
     && docker-php-ext-install bz2 \
     && :\
     && docker-php-ext-install zip \
@@ -42,11 +41,11 @@ RUN apt-get update \
     && docker-php-ext-install sockets \
     && docker-php-ext-install gettext \
     && docker-php-ext-install shmop \
-#    && docker-php-ext-install sysvmsg \
-#    && docker-php-ext-install sysvsem \
-#    && docker-php-ext-install sysvshm \
-    && docker-php-ext-install opcache \
-#    && docker-php-ext-install pdo_firebird \
+    && docker-php-ext-install sysvmsg \
+    && docker-php-ext-install sysvsem \
+    && docker-php-ext-install sysvshm \
+    && docker-php-ext-install opcache
+    #&& docker-php-ext-install pdo_firebird \
     #&& docker-php-ext-install pdo_dblib \
     #&& docker-php-ext-install pdo_oci \
     #&& docker-php-ext-install pdo_odbc \
@@ -57,45 +56,45 @@ RUN apt-get update \
     #&& docker-php-ext-install dba \
     #&& docker-php-ext-install interbase \
     #&& :\
-    #&& apt-get install -y libmcrypt-dev \
+    #&& yum install -y libmcrypt-dev \
     #&& docker-php-ext-install mcrypt \
-    && :\
-    && apt-get install -y curl \
-    && apt-get install -y libcurl3 \
-    && apt-get install -y libcurl4-openssl-dev \
-    && docker-php-ext-install curl \
-    && :\
-    #&& apt-get install -y libreadline-dev \
+    #&& :\
+    #&& yum install -y curl \
+    #&& yum install -y libcurl3 \
+    #&& yum install -y libcurl4-openssl-dev \
+    #&& docker-php-ext-install curl \
+    #&& :\
+    #&& yum install -y libreadline-dev \
     #&& docker-php-ext-install readline \
     #&& :\
-    #&& apt-get install -y libsnmp-dev \
-    #&& apt-get install -y snmp \
+    #&& yum install -y libsnmp-dev \
+    #&& yum install -y snmp \
     #&& docker-php-ext-install snmp \
     #&& :\
-    #&& apt-get install -y libpspell-dev \
-    #&& apt-get install -y aspell-en \
+    #&& yum install -y libpspell-dev \
+    #&& yum install -y aspell-en \
     #&& docker-php-ext-install pspell \
     #&& :\
-    #&& apt-get install -y librecode0 \
-    #&& apt-get install -y librecode-dev \
+    #&& yum install -y librecode0 \
+    #&& yum install -y librecode-dev \
     #&& docker-php-ext-install recode \
     #&& :\
-    #&& apt-get install -y libtidy-dev \
+    #&& yum install -y libtidy-dev \
     #&& docker-php-ext-install tidy \
     #&& :\
-    #&& apt-get install -y libgmp-dev \
+    #&& yum install -y libgmp-dev \
     #&& ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h \
     #&& docker-php-ext-install gmp \
     #&& :\
-    #&& apt-get install -y postgresql-client \
-    #&& apt-get install -y mysql-client \
+    #&& yum install -y postgresql-client \
+    #&& yum install -y mysql-client \
     #&& :\
-    #&& apt-get install -y libc-client-dev \
+    #&& yum install -y libc-client-dev \
     #&& docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
     #&& docker-php-ext-install imap \
     #&& :\
-    #&& apt-get install -y libldb-dev \
-    #&& apt-get install -y libldap2-dev \
+    #&& yum install -y libldb-dev \
+    #&& yum install -y libldap2-dev \
     #&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu \
     #&& docker-php-ext-install ldap \
 
