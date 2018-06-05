@@ -100,3 +100,4 @@ RUN apt-get update \
 
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer \
+    && composer config -g repo.packagist composer https://packagist.phpcomposer.com

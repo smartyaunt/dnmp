@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b8c53ab-1808-4fe2-954c-9369bef39783" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/conf/conf.d/kmapi.conf" afterPath="$PROJECT_DIR$/conf/conf.d/default.conf" />
+      <change beforePath="$PROJECT_DIR$/php/php54/Dockerfile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/php/php54/sources.list.jessie" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/php/php54/zendopcache-7.0.5.tgz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/php/php56/Dockerfile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/php/php56/sources.list.jessie" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/php/php72/Dockerfile" afterPath="$PROJECT_DIR$/php/php72/Dockerfile" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
@@ -43,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kmapi.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/conf.d/kmapi.conf">
+      <file leaf-file-name="default.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conf/conf.d/default.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="52">
+              <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -58,6 +65,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-884">
               <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nginx.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,8 +93,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/php72/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2626">
-              <caret line="101" column="101" lean-forward="false" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="101" />
+            <state relative-caret-position="632">
+              <caret line="102" column="83" lean-forward="false" selection-start-line="102" selection-start-column="83" selection-end-line="102" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -97,7 +114,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/conf/conf.d/site1.conf" />
-        <option value="$PROJECT_DIR$/php/php72/Dockerfile" />
         <option value="$PROJECT_DIR$/rabbitmq_enabled_plugins" />
         <option value="$PROJECT_DIR$/conf/conf.d/testhttps.conf" />
         <option value="$PROJECT_DIR$/conf/nginx.conf" />
@@ -105,6 +121,8 @@
         <option value="$PROJECT_DIR$/conf/conf.d/kmapi.conf" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/php/php72/Dockerfile" />
+        <option value="$PROJECT_DIR$/conf/conf.d/default.conf" />
       </list>
     </option>
   </component>
@@ -190,12 +208,12 @@
       <option name="presentableId" value="Default" />
       <updated>1527758647053</updated>
       <workItem from="1527758649387" duration="14241000" />
-      <workItem from="1528079773281" duration="6850000" />
+      <workItem from="1528079773281" duration="7875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21091000" />
+    <option name="totallyTimeSpent" value="22116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -260,7 +278,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/conf.d/kmapi.conf">
+    <entry file="file://$PROJECT_DIR$/conf/conf.d/default.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="832">
           <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
@@ -312,14 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/php-fpm.d/www.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-884">
@@ -336,14 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/php72/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2626">
-          <caret line="101" column="101" lean-forward="false" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -352,10 +354,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/conf.d/kmapi.conf">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="156">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php72/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="102" column="83" lean-forward="false" selection-start-line="102" selection-start-column="83" selection-end-line="102" selection-end-column="83" />
           <folding />
         </state>
       </provider>
@@ -368,10 +378,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/conf/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="390">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/conf.d/default.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
           <folding />
         </state>
       </provider>
